@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    .first-heading{
+        @apply text-cyan-400;
+    }
+    .second-heading{
+        @apply text-4xl text-purple-500 bg-yellow-400 border-x-2;
+    }
+}
+
+@layer components{
+    .btn-primary{
+        @apply bg-green-500 px-4 py-2 text-white rounded m-2 hover:bg-yellow-500;
+    }
+}
+@layer utilities{
+    .bg-grayscale{
+    @apply grayscale hover:grayscale 0;
+    }
+    
+}
